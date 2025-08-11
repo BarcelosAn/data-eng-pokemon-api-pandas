@@ -39,7 +39,22 @@ Este projeto realiza a extração e análise de dados da [PokeAPI](https://pokea
    pip install -r requirements.txt
    ```
 
-4. **Abrir o Jupyter Notebook**
+4. **Criar as pastas para organização dos dados**
+   Crie as pastas **raw**, **silver** e **gold** na raiz do projeto para armazenar as diferentes camadas dos dados durante o pipeline de engenharia:
+
+   * `raw`: dados brutos extraídos da API, sem modificações
+   * `silver`: dados intermediários, tratados e transformados
+   * `gold`: dados finais prontos para análise e exportação
+
+   Você pode criar as pastas manualmente ou via terminal:
+
+   ```bash
+   mkdir raw 
+   mkdir silver
+   mkdir gold
+   ```
+
+5. **Abrir o Jupyter Notebook**
    Inicia a interface interativa para executar o código passo a passo.
 
    ```bash
@@ -48,7 +63,9 @@ Este projeto realiza a extração e análise de dados da [PokeAPI](https://pokea
 
    Após rodar este comando, o Jupyter abrirá no navegador. Basta selecionar o arquivo `.ipynb` do projeto e começar a explorar.
 
-   
+---
+
+
 ## 🏗️ Arquitetura do Pipeline (Modelo de Medalhão)
 
 ```
